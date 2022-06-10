@@ -34,20 +34,27 @@
  
 <!-- 1 --><!-- 2 -->
 
-<div class="tab_content" id="famAdd">Проверка 2<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Проверка 2<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-&nbsp;</div>
+<div class="tab_content" id="famAdd">
+  <!-- OK -->
+ <div id="ok_group_widget"></div>
+<script>
+!function (d, id, did, st) {
+  var js = d.createElement("script");
+  js.src = "https://connect.ok.ru/connect.js";
+  js.onload = js.onreadystatechange = function () {
+  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+    if (!this.executed) {
+      this.executed = true;
+      setTimeout(function () {
+        OK.CONNECT.insertGroupWidget(id,did,st);
+      }, 0);
+    }
+  }};
+  d.documentElement.appendChild(js);
+}(document,"ok_group_widget","%2070000000008884",'{"width":360,"height":400,"type":"feed"}');
+</script>
+  <!-- OK -->
+ </div>
 <!-- 2 --><!-- 3 -->
 
 <div class="tab_content" id="vkcome">Проверка 3<br />
