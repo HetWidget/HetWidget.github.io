@@ -13,27 +13,26 @@
 <link href="//hetwidget.github.io/css/1/base.css" rel="StyleSheet" type="text/css" /><script type="text/javascript" src="//hetwidget.github.io/js/base.js"></script>
 <div class="container">
 <ul class="tabs">
- <li><a href="#famInfo">1</a></li>
+ <li><a href="#vk">1</a></li>
  <li><a href="#famAdd">2</a></li>
  <li><a href="#vkcome">3</a></li>
  <li><a href="#leromeko">4</a></li>
 </ul>
 
 <div class="tab_container"><!-- 1 -->
-<div class="tab_content" id="famInfo">Проверка 1<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Проверка 1<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-&nbsp;</div>
+<div class="tab_content" id="vk">Проверка 1<br />
+ <!-- VK -->
+<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+
+<!-- Put this div tag to the place, where the Group block will be -->
+<div id="vk_groups"></div>
+<script type="text/javascript">
+  VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: 255, height: 650, color1: "FFFFFF", color2: "000000", color3: "5181B8"}, 213844829);
+</script>
+ <!-- VK -->
+ </div>
+ 
 <!-- 1 --><!-- 2 -->
 
 <div class="tab_content" id="famAdd">Проверка 2<br />
